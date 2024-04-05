@@ -12,6 +12,8 @@ docstr = """
          
          Based on Maloney's method
 
+         2d systems
+
          """
 
 import numpy as np
