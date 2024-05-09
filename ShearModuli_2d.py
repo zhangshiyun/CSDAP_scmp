@@ -208,6 +208,8 @@ def calc_dynamic_matrix_harmonic(xydfile,lattice_lx,alpha=2.):
     arraycol = np.array(col)
     arraydata = np.array(data)
     dym = csr_matrix((arraydata,(arrayrow,arraycol)),shape=(2*natom,2*natom))
+
+    # return dymanic matrix, extended hessian term, born term, nonaffine velocity and neighborlist
     return dym, Xi, born_term,v, cnlist
 
 def calc_dra(ri,rj,lx,ly):
